@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# GitHub Finder 🔎
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Github Finder is a web application that allows users to search for profiles on GitHub using the GitHub API. This project was developed with React and TypeScript, ensuring a robust and scalable code base. Route control is performed with the React Router DOM.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+You can access the live demo of the application: [GitHub-Finder](https://github-finder-typescript-eosin.vercel.app/)
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **Search by User:** Allows users to search GitHub profiles by entering a username.
+- **Profile View:** Displays detailed user information, including repositories, followers, following, and bio.
+- **Integration with GitHub API:** Uses the GitHub API to obtain real-time data directly from the platform.
+- **Strict Typing:** All data received from the API is strongly typed using TypeScript, ensuring security and predictability in development.
+- **Route Control:** Implementation of routes for navigation between different application pages using React Router DOM.
+## Tech
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **ReactJS**
+- **TypeScript**
+- **API GitHub**
+- **React Router DOM**
+- **CSS3**
+## API GitHub
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+You can search for detailed information about any GitHub user using their username. 
+The API returns data such as name, avatar, bio, location, public repositories, followers, and more.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+https://api.github.com/users/{username}
+## License
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+This project is licensed under the MIT License - see the LICENSE file for details.
+## Contact
+
+**Email:** stephanie.cucolo@gmail.com
+
+**LinkedIn:** https://www.linkedin.com/in/stephanie-marcula/
